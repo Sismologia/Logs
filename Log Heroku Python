@@ -1,0 +1,65 @@
+(venv) C:\Users\usuario\log>heroku logs
+2015-02-27T23:51:40.603351+00:00 heroku[api]: Enable Logplex by sismologia.mundi
+al@outlook.com
+2015-02-27T23:51:40.603351+00:00 heroku[api]: Release v2 created by sismologia.m
+undial@outlook.com
+2015-02-27T23:53:41.265874+00:00 heroku[api]: Scale to web=1 by sismologia.mundi
+al@outlook.com
+2015-02-27T23:53:41.353324+00:00 heroku[api]: Deploy e312296 by sismologia.mundi
+al@outlook.com
+2015-02-27T23:53:41.353324+00:00 heroku[api]: Release v3 created by sismologia.m
+undial@outlook.com
+2015-02-27T23:53:45.439172+00:00 heroku[web.1]: Starting process with command `p
+ython bot.py`
+2015-02-27T23:53:51.772768+00:00 app[web.1]: Traceback (most recent call last):
+2015-02-27T23:53:51.772791+00:00 app[web.1]:   File "bot.py", line 14, in <modul
+e>
+2015-02-27T23:53:51.773241+00:00 app[web.1]:     bot.tweet()
+2015-02-27T23:53:51.773428+00:00 app[web.1]:   File "/app/salvitobot/salvito_twi
+tter.py", line 35, in post_to_twitter
+2015-02-27T23:53:51.773676+00:00 app[web.1]: salvitobot.exceptions.NoTwitterToke
+n: You need to create and ``app`` en Twitter and add your keys to config.json
+2015-02-27T23:53:51.773421+00:00 app[web.1]:     salvito_twitter.post_to_twitter
+(self._quakes_to_write)
+2015-02-27T23:53:51.773233+00:00 app[web.1]:     main()
+2015-02-27T23:53:51.773581+00:00 app[web.1]:     raise NoTwitterToken("You need
+to create and ``app`` en Twitter and add your keys to config.json")
+2015-02-27T23:53:51.773236+00:00 app[web.1]:   File "bot.py", line 10, in main
+2015-02-27T23:53:51.773242+00:00 app[web.1]:   File "/app/salvitobot/api.py", li
+ne 130, in tweet
+2015-02-27T23:53:52.629769+00:00 heroku[web.1]: Process exited with status 1
+2015-02-27T23:53:52.639071+00:00 heroku[web.1]: State changed from starting to c
+rashed
+2015-02-27T23:53:52.640234+00:00 heroku[web.1]: State changed from crashed to st
+arting
+2015-02-27T23:53:59.811393+00:00 heroku[web.1]: Starting process with command `p
+ython bot.py`
+2015-02-27T23:54:04.353492+00:00 app[web.1]:   File "bot.py", line 10, in main
+2015-02-27T23:54:04.353756+00:00 app[web.1]:   File "/app/salvitobot/api.py", li
+ne 130, in tweet
+2015-02-27T23:54:04.354064+00:00 app[web.1]:     salvito_twitter.post_to_twitter
+(self._quakes_to_write)
+2015-02-27T23:54:04.354118+00:00 app[web.1]:   File "/app/salvitobot/salvito_twi
+tter.py", line 35, in post_to_twitter
+2015-02-27T23:54:04.354380+00:00 app[web.1]:     raise NoTwitterToken("You need
+to create and ``app`` en Twitter and add your keys to config.json")
+2015-02-27T23:54:04.354440+00:00 app[web.1]: salvitobot.exceptions.NoTwitterToke
+n: You need to create and ``app`` en Twitter and add your keys to config.json
+2015-02-27T23:54:04.353713+00:00 app[web.1]:     bot.tweet()
+2015-02-27T23:54:04.352623+00:00 app[web.1]: Traceback (most recent call last):
+2015-02-27T23:54:04.352698+00:00 app[web.1]:   File "bot.py", line 14, in <modul
+e>
+2015-02-27T23:54:04.353384+00:00 app[web.1]:     main()
+2015-02-27T23:54:05.314254+00:00 heroku[web.1]: Process exited with status 1
+2015-02-27T23:54:05.342186+00:00 heroku[web.1]: State changed from starting to c
+rashed
+2015-02-27T23:54:21.076456+00:00 heroku[api]: Scale to web=1 by sismologia.mundi
+al@outlook.com
+2015-02-27T23:55:05.929035+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/" host=glacial-forest-8623.herokuapp.com request_id=b290
+9a6d-8686-485d-a878-b4c0aacce416 fwd="201.215.115.47" dyno= connect= service= st
+atus=503 bytes=
+2015-02-27T23:55:07.957670+00:00 heroku[router]: at=error code=H10 desc="App cra
+shed" method=GET path="/favicon.ico" host=glacial-forest-8623.herokuapp.com requ
+est_id=4c940d9a-a496-4c9a-bdb0-2e2493871e19 fwd="201.215.115.47" dyno= connect=
+service= status=503 bytes=
